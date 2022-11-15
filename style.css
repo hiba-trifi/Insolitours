@@ -1,0 +1,1034 @@
+@font-face {
+    font-family: 'Metropolis-semibold' ;
+    src: url(Metropolis-Font-family/Metropolis-SemiBold.otf) ;
+}
+@font-face {
+    font-family:  'Metropolis-Thin';
+    src:url(Metropolis-Font-family/Metropolis-Thin.otf);
+}
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url(Metropolis-Font-family/Metropolis-Regular.otf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.bkg
+{
+     background-image: url(image/plane2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+     width: 100%;
+    height: 100vh;
+
+}
+body
+{ 
+    font-family: 'Metropolis-semibold';
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+  .logo
+{
+  margin:1% 2% ;
+}
+a
+{
+    text-decoration: none ;
+    color: white;
+}
+
+nav
+{   
+    padding-right: 6px;
+    padding-top: 30px;
+}
+nav a
+{
+    
+    font-family: 'Metropolis-Thin';
+    background-color: rgba(50, 66, 115, 0.456);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px black ;
+    padding:10px;
+    margin-left: 14px;
+   
+    
+}
+
+nav a:hover
+{
+    font-size: 1.2em;
+    transition: 0.5s ;
+    background-color: rgb(255, 136, 0);
+}
+
+.halloween-promo-btn
+{
+    
+    font-family: 'Metropolis-semibold';
+    background-image: url(./image/16304.jpg);
+    background-size: cover;
+    background-position:center ;
+    border-radius: 7px;
+    text-shadow: 2px 2px 2px black ;
+    box-shadow: 2px 2px 5px black ;
+    padding:10px;
+    margin-left: 14px;
+    text-decoration: none;
+    color: rgb(250, 249, 255);
+}
+.halloween-promo-btn:hover
+{
+     zoom: 102%;
+    background-blend-mode: soft-light;
+    transition: 0.5s ;
+    background-color: rgba(255, 136, 0, 0.591);
+}
+
+
+.sec1
+{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.sec1 h2
+{   
+    margin-bottom: 25px;
+    border-radius: 7px;
+    background-color: rgba(9, 34, 108, 0.145);
+    text-shadow: 10px 10px 5px black;
+    padding: 10px;
+    text-align: center;
+    font-size: 3.5em;
+    color: white;  
+}
+
+.sec1 h3
+{
+    font-size: 2em;
+    line-height: 1.30;
+    color: rgb(255, 255, 255);
+}
+
+.div
+{
+    text-align: center;
+    padding: 10px ;
+    border-radius: 10px;
+    border: 3px double rgb(255, 255, 255);
+    background-color:rgba(2, 2, 44, 0.685) ;
+} 
+
+.sec1 button
+{ 
+    background-image: url(./image/promo.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Metropolis-semibold';
+    font-size: 25px;
+    margin-top: 4%;
+    text-shadow: 3px 3px 3px black;
+    background-color: rgba(255, 123, 0, 0.932) ;
+    box-shadow: 5px 5px 5px black ;
+    border: none;
+    border-radius: 7px;
+    padding:10px;
+}
+
+.sec1 button:hover
+{
+    transition: 0.5s;
+    zoom: 110% ;
+    background-blend-mode:color-burn;
+}
+
+
+.sec3
+{
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+
+hr
+{
+    margin-top: 3%;
+    margin-left: 24%;
+    margin-bottom: 2%;
+    border-radius:6px;
+    width: 50%;
+    background-color: rgba(255, 136, 0, 0.951);
+    border: 2px solid  rgba(255, 136, 0, 0.951);
+    box-shadow: 2px 2px 2px rgba(8, 16, 124, 0.904);
+}
+span
+{
+    color: rgb(255, 136, 0) ;
+}
+.sec3 h2
+{
+    
+    color: rgb(11, 29, 88);
+    background-color: rgba(90, 103, 202, 0);
+    border-radius: 7px;
+    font-family: 'Metropolis-Regular';
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(8, 16, 124, 0.904);
+    font-size: 35px;
+   
+}
+.slider
+{
+    border:double 3px white ;
+    margin: auto;
+    position: relative;
+    border-radius: 7px;
+    width: 900px;
+    height:450px ;
+    overflow: hidden;
+}
+.slides
+{
+    display: flex;
+    
+}
+
+.slides img
+{
+    border-radius: 7px;
+     width: 900px;
+     height:450px;
+}
+.slides input
+{
+    display: none;
+}
+.slide
+{ 
+    transition: 2s;
+}
+
+
+.info .morocco
+{
+    background-color: rgba(75, 123, 243, 0.195);
+    font-family: 'Metropolis-Regular';
+    text-shadow: 10px 10px 8px black ;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 5% 40%;
+}
+.info .france
+{
+    background-color: rgba(75, 123, 243, 0.195);
+    font-family: 'Metropolis-Regular';
+    text-shadow: 10px 10px 8px black ;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 5% 42%;
+}
+.info .italy
+{
+    background-color: rgba(75, 123, 243, 0.195);
+    font-family: 'Metropolis-Regular';
+    text-shadow: 10px 10px 8px black ;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 5% 44%;
+}
+.info .turkey
+{
+    background-color: rgba(75, 123, 243, 0.195);
+    font-family: 'Metropolis-Regular';
+    text-shadow: 10px 10px 8px black ;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 5% 43%;
+}
+
+.info .small-text
+{
+    background-color: rgba(75, 123, 243, 0.195);
+    font-family: 'Metropolis-Regular';
+    text-shadow: 10px 10px 8px black ;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 5% 45%;
+}
+.info button
+{   
+    margin-left: 390px;
+    margin-top: -120px;
+    padding: 11px;
+    position:absolute;
+    text-shadow: 1px 2px 3px black;
+    background-color:rgba(69, 131, 224, 0.643);
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0) ;
+    border: none;
+    border-radius: 7px;
+    color: white;
+}
+.info button:hover
+{
+    font-size: 17px;
+    padding: 13px;
+    transition: 0.5s;
+    color:rgb(253, 254, 255);
+    background-color:  rgba(255, 136, 0, 0.951);
+}
+.manuel-nav
+{
+    justify-content: center;
+    position: absolute;
+    width: 900px;
+    margin-top: -40px;
+    display: flex;
+
+}
+
+.manuel-btn
+{
+    
+    border: 2.3px solid rgb(255, 155, 6);
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s; 
+   
+}
+.manuel-btn:not(:last-child)
+{
+    margin-right: 30px;
+}
+.manuel-btn:hover
+{
+    background-color:  rgba(255, 136, 0, 0.958) ;
+}
+#radio1:checked ~ .first
+{
+    margin-left: 0;
+} 
+#radio2:checked ~ .first
+{
+    margin-left: -100%;
+} 
+#radio3:checked ~ .first
+{
+    margin-left:-200%;
+} 
+#radio4:checked ~ .first
+{
+    margin-left: -300%;
+} 
+#radio5:checked ~ .first
+{
+    margin-left: -400%;
+} 
+#radio6:checked ~ .first
+{
+    margin-left: -500%;
+} 
+
+
+.sec2
+{
+    margin:2% 10%;
+
+}
+
+.sec2 h2
+{ 
+
+    background-image: url(image/h2-bkg.png);
+    background-size:cover;
+    padding:  4% 0%;
+    background-color: rgba(90, 103, 202, 0);
+    border-radius: 7px;
+    font-family: 'Metropolis-Regular';
+    display: flex;
+    justify-content: center;
+    color: rgb(11, 29, 88);
+    text-shadow: 1px 1px 1px rgba(255, 153, 0, 0.904);
+    font-size: 45px;
+
+}
+
+.all-cards
+{
+
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.card
+{  
+    background-image: url(image/h2-bkg.png);
+    padding-bottom: 1.5%;
+    border-radius: 10px;
+    margin: 2% 3%;
+    box-shadow: 5px 5px 5px rgb(31, 31, 86);
+}
+
+.card img
+{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px; 
+}
+
+.card h3
+{
+    
+ display: flex;
+ justify-content: center;
+ font-family: 'Metropolis-regular' ;
+ font-size: 1.5em;
+ background-color:rgb(250, 100, 0);
+ color: rgb(255, 255, 255);
+ padding: 10px;
+ box-shadow: 0px 3px 5px rgb(11, 29, 88);
+ text-shadow: 3px 3px 5px black ;
+
+ 
+}
+
+
+
+.card-btn
+{
+
+    background-color: rgb(11, 29, 88);
+    font-size: 1em;
+    margin-top: 4%;
+    color: rgb(255, 255, 255) ;
+    text-shadow: 3px 3px 3px black;
+    font-family: 'Metropolis-SemiBold';
+    box-shadow: 5px 5px 5px black ;
+    border: none;
+    border-radius: 7px;
+    padding:10px;
+}
+
+.card-btn:hover
+{ 
+    background-image: url(image/h2-bkg.png);
+    background-size:contain;
+    text-shadow: 1px 1px 1px black;
+    font-family:'Metropolis-SemiBold' ;
+    transition: 0.3s;
+    background-color: rgb(255, 131, 7);
+    color: white;
+}
+
+small
+{   
+    padding: 2%;
+    border-radius: 10px;
+    background-color: rgba(255, 98, 98, 0.493);
+    color: #fc0000;
+    font-size: 1em;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    font-family: 'Metropolis-semibold', sans-serif;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+.sec4
+{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.sec4 h2
+{
+    color: rgb(11, 29, 88);
+    background-color: rgba(90, 103, 202, 0);
+    border-radius: 7px;
+    font-family: 'Metropolis-Regular';
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(8, 16, 124, 0.904);
+    font-size: 35px;
+}
+.services
+{   
+    width: 40%;
+    margin: 2% 0;
+}
+
+.blue
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%; 
+   background-color:  rgb(11, 29, 88);
+    border-radius: 10px;
+    padding: 2% 0;
+  
+}
+
+.blue-info
+{
+    color: #ffffff;
+font-size: 0.8em;
+text-align: center;
+}
+.blue-info h3
+{
+    font-size: 1.5em;
+    margin-bottom: 3%;
+    font-family: 'Metropolis-semibold';
+    color: #f35208;
+}
+
+.sec5
+{
+    margin: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec5 h2
+{
+    color: rgb(11, 29, 88);
+    background-color: rgba(90, 103, 202, 0);
+    border-radius: 7px;
+    font-family: 'Metropolis-Regular';
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(8, 16, 124, 0.904);
+    font-size: 35px;
+}
+.sec5 hr , .sec4 hr 
+{ 
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-radius:6px;
+    width: 50%;
+    background-color: rgba(255, 136, 0, 0.951);
+    border: 2px solid  rgba(255, 136, 0, 0.951);
+    box-shadow: 2px 2px 2px rgba(8, 16, 124, 0.904);
+}
+.sign-up
+{
+     background-color:  rgb(11, 29, 88);
+     border-radius: 7px;
+     padding: 10px;
+    width: 70%;
+   
+}
+
+.sign-up span
+{
+    margin: 1.5% 0;
+    font-family: 'Metropolis-regular' ;
+    color: #ffffff;
+    display: block;
+}
+.sign-up button
+{
+    border: none;
+    padding: 10px ;
+    width: 100%;
+    border-radius: 7PX;
+    background-color: #f35208;
+    margin: 1% 0;
+display: block;
+}
+.sec5 input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: #f35208 1px solid;
+}
+
+
+
+
+
+
+footer
+{
+	background: rgb(11, 29, 88);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 55px 50px;
+   
+}
+
+.footer-left, .footer-center, .footer-right
+{
+	display: inline-block;
+}
+
+.footer-left
+{
+	width: 40%;
+}
+
+
+.footer-nav
+{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-nav a
+{
+    font-family: 'Metropolis-regular';
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.company-name
+{
+	color:rgb(253, 166, 108);
+	font-size: 14px;
+}
+
+.footer-center
+{
+	width: 35%;
+}
+
+ .footer-center i
+ {
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-center i.fa-envelope
+{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-center p
+{
+    line-height: 42px;
+	display: inline-block;
+	color: #ffffff;
+}
+
+
+ .footer-center p a
+ {
+	color:  rgb(255, 136, 0);
+}
+.footer-center p a:hover
+{
+    zoom: 110%;
+    text-decoration: underline;
+	color:  rgb(255, 136, 0);
+}
+
+ .footer-right
+ {
+	width: 20%;
+}
+
+
+.footer-right h2
+{
+	display: block;
+    color: rgb(255, 102, 0);
+	margin-bottom: 20px;
+}
+.footer-right span
+{
+    color:  #dd8d42;
+    display: block;
+    margin: 4% 0;
+}
+
+.footer-icons
+{
+	margin-top: 25px;
+}
+
+.footer-icons a
+{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #f86300;
+	border-radius: 2px;
+	font-size: 20px;
+	color: rgb(11, 29, 88);
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+}
+.footer-icons a:hover
+{
+    transition: 0.5s;
+    background:  rgb(11, 29, 88);
+    color: #f86300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 880px)
+ {
+    .logo
+    {
+        width: 50px;
+      margin:1% 2% ;
+    }
+
+
+    nav a
+{ 
+    font-size: 12px;
+    padding:7px;
+}
+
+nav a:hover
+{
+    font-size: 0.6em;
+}
+
+.halloween-promo-btn
+{
+    font-size: 10px;
+}
+
+.halloween-promo-btn:hover
+{
+    font-size: 0.6em;
+}
+
+
+.sec1 h2
+{   
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 2em; 
+}
+
+.sec1 h3
+{
+    font-size: 0.8em;
+}
+
+.div
+{
+    border: 2px double rgb(255, 255, 255);
+} 
+
+.sec1 button
+{ 
+    font-size: 15px;
+}
+
+.sec2
+{
+    margin:1% 7%;
+
+}
+
+.sec2 h2
+{ 
+    padding:  3% 0%;
+    font-size: 35px;
+}
+
+.card h3
+{
+ font-size: 0.8em;
+ padding: 7px;
+}
+
+.card-btn
+{
+    font-size: 0.8em;
+    padding:7px;
+}
+small
+{   
+    
+    margin: 0 7%;
+    padding: 1%;
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+.sec3
+{
+   margin-top: 10%;
+}
+
+
+.sec3 h2
+{
+    font-size: 18px;
+}
+.slider
+{
+    width: 500px;
+    height:250px ;
+}
+
+.slides img
+{
+     width: 500px;
+     height:250px;
+}
+
+
+.info .turkey ,.info .small-text ,.info .italy ,.info .france  ,.info .morocco
+{
+    font-size: 20px;
+}
+
+.info button
+{   
+    margin-left: 200px;
+    padding: 7px;
+    font-size: 10px;
+
+}
+.info button:hover
+{
+    font-size: 13px;
+    padding: 8px;
+}
+.manuel-nav
+{
+    justify-content: center;
+    position: absolute;
+    width: 500px;
+    margin-top: -40px;
+    display: flex;
+
+}
+
+.manuel-btn
+{
+    border: 1px solid rgb(255, 155, 6);
+    padding: 4px;
+   
+}
+
+
+
+
+
+.sec4
+{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.sec4 h2
+{
+    font-size: 30px;
+}
+.services
+{   
+    width: 50%;
+    margin: 2% 0;
+}
+
+.blue
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%; 
+   background-color:  rgb(11, 29, 88);
+    border-radius: 10px;
+    padding: 2% 0;
+  
+}
+
+.blue-info
+{
+    color: #ffffff;
+font-size: 0.5em;
+text-align: center;
+}
+.blue-info h3
+{
+    font-size: 0.5em;
+    margin-bottom: 3%;
+    font-family: 'Metropolis-semibold';
+    color: #f35208;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer{
+		font: bold 14px sans-serif;
+	}
+
+.footer-left,
+.footer-center,
+.footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+.footer-center i{
+		margin-left: 0;
+	}
+
+
+
+}
+
